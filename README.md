@@ -1,30 +1,50 @@
-# React + TypeScript + Vite
+# SIBI Sign Language Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This web application uses your webcam to detect sign language and translate it into text in real-time. It is built using modern web technologies to ensure performance, reliability, and a great user experience.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Vite**: For fast and efficient build tooling.
+- **React + SWC**: React for building the user interface, enhanced with the SWC compiler for optimized performance.
+- **TypeScript**: For static typing and better developer experience.
+- **Tailwind CSS**: For utility-first CSS styling.
+- **ShadCN**: For base UI components ensuring a professional look.
+- **React Camera**: For accessing and using the webcam in a React application.
 
-## Expanding the ESLint configuration
+## Reasoning
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Vite**: Chosen for its speed and simplicity in setting up and building the project.
+- **React + SWC**: React provides a robust framework for building the UI, while SWC boosts performance with fast compilation.
+- **TypeScript**: Ensures type safety and reduces bugs during development.
+- **Tailwind CSS**: Offers a highly customizable and utility-first approach to styling, making it easier to maintain and scale.
+- **ShadCN**: Provides a consistent and polished set of UI components.
+- **React Camera**: Simplifies the integration of webcam functionality into the React application.
 
-- Configure the top-level `parserOptions` property like this:
+## How to setup
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+1. Clone the repo
+2. Install the dependencies
+
+```bash
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+3. Build the project
+
+```bash
+npm run build
+```
+
+4. Run the project
+
+```bash
+npm run dev
+```
+
+5. Open the browser and go to `http://localhost:5173/"
+
+## How to use
+
+1. Allow the browser to access the webcam
+2. Show your hand sign to the webcam
+3. The app will detect the sign and translate it to text
