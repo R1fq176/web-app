@@ -1,5 +1,5 @@
 export const abjadData = [
-  { name: "A", image: "/abjad/tes.gif" },
+  { name: "A", image: "/abjad/a (1).mp4" },
   { name: "B", image: "/abjad/tes.gif" },
   { name: "C", image: "/abjad/tes.gif" },
   { name: "D", image: "/abjad/tes.gif" },
