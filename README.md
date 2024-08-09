@@ -47,4 +47,4 @@ npm run dev
 
 1. Allow the browser to access the webcam
 2. Show your hand sign to the webcam
-3. The app will detect the sign and translate it to text
+3. The app will detect the sign and translate it to choosen alphabet
