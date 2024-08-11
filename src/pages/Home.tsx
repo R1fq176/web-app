@@ -1,4 +1,5 @@
-import Camera from "@/components/camera";
+// import Camera from "@/components/camera";
+import CameraDetection from "@/components/detection";
 import { H2, P } from "@/components/typography";
 import Metadata from "@/lib/metadata";
 export default function Home() {
@@ -9,7 +10,8 @@ export default function Home() {
         Study
       </H2>
       {/* Camra comp */}
-      <Camera />
+      {/* <Camera /> */}
+      <CameraDetection/>
       {/* Result appear */}
       <div className="bg-black w-[70%] h-[200px] rounded-xl flex self-center">
         <P
